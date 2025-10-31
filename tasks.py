@@ -14,10 +14,13 @@ import numpy
 # -----------------------------------------------
 
 def step(x):
-    if x > 0:
-        return 1
-    else:
-        return -1
+    if isinstance(x, int):
+        if x > 0:
+            return 1
+        else:
+            return -1
+
+
 
 
 # -----------------------------------------------
@@ -34,11 +37,11 @@ def step(x):
 # -----------------------------------------------
 def ReLu(numpy_array, cutoff = 0):
   if isinstance(numpy_array, np.ndarray):
-    for i in length(numpy_array)
+    for i in length(numpy_array):
       if numpy_array[i] < cutoff:
         return 0
       else:
-        return numpy_array[i]
+        return numpy_array
 
 
 # -----------------------------------------------
@@ -54,7 +57,8 @@ def ReLu(numpy_array, cutoff = 0):
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer()
+def neural_net_layer():
+  pass
 
 
 # ------------------------------------------
