@@ -63,5 +63,4 @@ def neural_net_layer(a: numpy.array, b: numpy.array):
   return ReLu(c)
   
 
-
 # ------------------------------------------
