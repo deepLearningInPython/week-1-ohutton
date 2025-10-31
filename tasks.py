@@ -41,7 +41,7 @@ def ReLu(numpy_array, cutoff = 0):
     if i < cutoff:
       new_array.append(cutoff)
     else:
-      new_array.append(x)
+      new_array.append(i)
   return np.array(new_array)
 
 
