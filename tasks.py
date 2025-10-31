@@ -37,11 +37,12 @@ def step(x):
 # -----------------------------------------------
 def ReLu(numpy_array, cutoff = 0):
   if isinstance(numpy_array, np.ndarray):
+    new_array = []
     for i in length(numpy_array):
       if numpy_array[i] < cutoff:
-        return 0
+        new_array[i] = numpy_array[i]
       else:
-        return numpy_array
+        new_array[i] = 0
 
 
 # -----------------------------------------------
