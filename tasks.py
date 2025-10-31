@@ -14,16 +14,11 @@ import numpy
 # -----------------------------------------------
 
 def step(x):
-    if isinstance(x, int):
-        if x > 0:
-            return 1
-        else:
-            return -1
+    if x > 0:
+        return 1
     else:
-      return "Input must be an integer"
+        return -1
 
-step(-1)
-step("d")
 
 # -----------------------------------------------
 
@@ -43,9 +38,9 @@ def ReLu(numpy_array, cutoff = 0):
       if numpy_array[i] < cutoff:
         return 0
       else:
-        return numpy_array
+        return numpy_array[i]
 
-ReLu(np.array[-1, 2, 4, 3])
+
 # -----------------------------------------------
 
 
