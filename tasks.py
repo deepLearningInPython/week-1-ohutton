@@ -13,8 +13,17 @@ import numpy
 # Your code here:
 # -----------------------------------------------
 
-def step
+def step(x):
+    if isinstance(x, int):
+        if x > 0:
+            return 1
+        else:
+            return -1
+    else:
+      return "Input must be an integer"
 
+step(-1)
+step("d")
 
 # -----------------------------------------------
 
@@ -28,9 +37,15 @@ def step
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+def ReLu(numpy_array, cutoff = 0):
+  if isinstance(numpy_array, np.ndarray):
+    for i in length(numpy_array)
+      if numpy_array[i] < cutoff:
+        return 0
+      else:
+        return numpy_array
 
-
+ReLu(np.array[-1, 2, 4, 3])
 # -----------------------------------------------
 
 
@@ -44,7 +59,7 @@ def ReLu
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer
+def neural_net_layer()
 
 
 # ------------------------------------------
